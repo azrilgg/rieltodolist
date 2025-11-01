@@ -1562,45 +1562,7 @@
 
             loadDemoTasks() {
                 if (this.tasks.length === 0) {
-                    const demoTasks = [
-                        {
-                            id: this.generateId(),
-                            title: 'Complete project proposal',
-                            description: 'Finish the Q4 project proposal and send it to the team for review',
-                            category: 'Work',
-                            priority: 'High',
-                            deadline: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString().slice(0, 16),
-                            tags: 'urgent, proposal, Q4',
-                            completed: false,
-                            createdAt: new Date().toISOString(),
-                            updatedAt: new Date().toISOString()
-                        },
-                        {
-                            id: this.generateId(),
-                            title: 'Morning workout routine',
-                            description: '30 minutes cardio and strength training',
-                            category: 'Health',
-                            priority: 'Medium',
-                            deadline: '',
-                            tags: 'fitness, daily, health',
-                            completed: true,
-                            createdAt: new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString(),
-                            updatedAt: new Date().toISOString()
-                        },
-                        
-                        {
-                            id: this.generateId(),
-                            title: 'ReadME',
-                            description: 'Continue reading chapter 3 about user-centered design principles',
-                            category: 'Study',
-                            priority: 'Low',
-                            deadline: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString().slice(0, 16),
-                            tags: 'reading, design, UX',
-                            completed: false,
-                            createdAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
-                            updatedAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString()
-                        }
-                    ];
+                    
                     
                     this.tasks = demoTasks;
                     this.filteredTasks = [...this.tasks];
