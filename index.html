@@ -1676,6 +1676,14 @@
                 const type = task.completed ? 'success' : 'info';
                 this.showNotification(message, type);
 
+
+                     // 🔊 Suara hanya saat task selesai
+               if (task.completed) {
+               const sound = new Audio('sound/complete.mp3');
+               sound.volume = 0.5;
+               sound.play();
+               }
+
                 // Add visual feedback
                 const taskCard = document.querySelector(`[data-task-id="${taskId}"]`);
                 if (taskCard) {
